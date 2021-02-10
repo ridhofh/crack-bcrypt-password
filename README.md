@@ -54,6 +54,20 @@ $2a$10$498jf/EdrFirxtGGdsfOZOEze5eATdJRBojDP6UgIMTQBEb.yWtaa
 $2a$10$I/yNzTkgBSHfleHPMa3kw.Cl7LwASHdE/Gxw/pXoTeYHyGMGtKSjW
 ```
 
+Mencari password berdasarkan dictionary terhadap list bcrypt password.
+```
+Usage: java mnm <Bcrypt Database File Name> <Dictionary File Name>
+
+crack-bcrypt\java-bcrypt>java mnm db.txt dictionary.txt
+$2a$10$ApnuWv1YaPVOWMccxk8nUeVbpOXyk6g1HG67KpozOb0AH11nPJqa2:password
+$2a$10$YpDyZ3qGVBFuFAe/XQObeu5XIGRLeDa4VmREGlBkIxfledUd4GQUi:test
+$2a$10$gCOjiyIlrHDr.tYAvB1kdu32RiEl9LqKJh7mkIJEIMdjGC7SWM7nK:P@ssw0rd
+$2a$10$498jf/EdrFirxtGGdsfOZOEze5eATdJRBojDP6UgIMTQBEb.yWtaa:P@ssw0rd
+$2a$10$I/yNzTkgBSHfleHPMa3kw.Cl7LwASHdE/Gxw/pXoTeYHyGMGtKSjW:P@ssw0rd
+$2a$10$FMniiwyewiiQDcPZz26X9eOIchXktWO8kBciEEqmx1qRuOA2m7WRO:SecretPassword
+$2a$10$jx/qQe.pDuX2h0i9QVyzSOQUQ.P.hDdQQoeC1x1pVUNoQw5A/jaUi:rahasia123
+```
+
 ### Untuk bahasa pemrograman Golang masuk ke folder `crack-bcrypt\golang-bcrypt`.
 
 Generate bcrypt hash dari password.
@@ -85,6 +99,20 @@ crack-bcrypt\golang-bcrypt\sdbm>sdbm.exe db P@ssw0rd
 $2a$10$gCOjiyIlrHDr.tYAvB1kdu32RiEl9LqKJh7mkIJEIMdjGC7SWM7nK
 $2a$10$498jf/EdrFirxtGGdsfOZOEze5eATdJRBojDP6UgIMTQBEb.yWtaa
 $2a$10$I/yNzTkgBSHfleHPMa3kw.Cl7LwASHdE/Gxw/pXoTeYHyGMGtKSjW
+```
+
+Mencari password berdasarkan dictionary terhadap list bcrypt password.
+```
+Usage: mnm.exe <bcrypt database file name> <dictionary file name>
+
+crack-bcrypt\golang-bcrypt\mnm>mnm.exe db dictionary
+$2a$10$FMniiwyewiiQDcPZz26X9eOIchXktWO8kBciEEqmx1qRuOA2m7WRO:SecretPassword
+$2a$10$jx/qQe.pDuX2h0i9QVyzSOQUQ.P.hDdQQoeC1x1pVUNoQw5A/jaUi:rahasia123
+$2a$10$gCOjiyIlrHDr.tYAvB1kdu32RiEl9LqKJh7mkIJEIMdjGC7SWM7nK:P@ssw0rd
+$2a$10$ApnuWv1YaPVOWMccxk8nUeVbpOXyk6g1HG67KpozOb0AH11nPJqa2:password
+$2a$10$498jf/EdrFirxtGGdsfOZOEze5eATdJRBojDP6UgIMTQBEb.yWtaa:P@ssw0rd
+$2a$10$I/yNzTkgBSHfleHPMa3kw.Cl7LwASHdE/Gxw/pXoTeYHyGMGtKSjW:P@ssw0rd
+$2a$10$YpDyZ3qGVBFuFAe/XQObeu5XIGRLeDa4VmREGlBkIxfledUd4GQUi:test
 ```
 
 ## Solusi
